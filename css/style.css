@@ -529,3 +529,222 @@ footer {
     font-weight: 600;
     font-size: 2em;
 }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.header {
+    background-image: url("../img/Walle.png");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    background-color: none;
+    border: 3px solid white;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 25px;
+    white-space: nowrap;
+    }
+
+.btn:hover {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: 3px solid white;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 25px;
+    white-space: nowrap;
+}
+
+.btnLeftBottom{
+    position: relative;
+    top: 500px;
+    right: 1160px; 
+
+}
+
+.btnLeftBottom1{
+    position: relative;
+    top: 540px;
+    right: 1160px; 
+
+}
+
+.MissionSlide{
+    width: 100%;
+    height: 75%;
+}
+
+.MissionFont{
+    color: white;
+}
+
+.LaunchesImage{
+        background-image: url("../img/CapstoneImage.png");
+        background-size:100% 100%; ;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-bottom:20px;
+}
+
+.LaunchesImage2{
+        background-image: url("../img/X57.png");
+        background-size:100% 100%; ;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-bottom:20px;
+}
+
+.DiscoveryImage{
+        background-image: url("../img/Discoveries.png");
+        background-size:100% 100% ;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-bottom:20px;
+}
+
+.GalleryImage{
+    background-image: url("../img/MissionGallery.png");
+    background-size:100% 100% ;
+    background-repeat: no-repeat;
+    height: 680px;
+    width: 500px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom:20px;
+    margin-left: 150px;
+}
+
+.GalleryHeading{
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.MissionLargeFont{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.MissionLargerFont{
+    font-size: 105px;
+    font-weight: bold;
+    color: white;
+}
+
+.MissionHeaderFont{
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+}
+
+.MissionTitle{
+    font: 40px;
+    letter-spacing: 12px;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.MissionPlanetText{
+    position: relative;
+    top: 350px;
+    right: 590px;
+    white-space: nowrap;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+#DiscoveryTitle{
+    padding-top: 6%;
+}
+
+.MissionDiscoveryTextAlign{
+    position: relative;
+    top: 350px;
+    right: 560px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.MissionLaunchesTextAlign{
+    position: relative;
+    top: 315px;
+    right: 260px;
+}
+
+#CapstoneTitle{
+    white-space: nowrap;
+    font-weight: bold;
+    font: 96px;
+    top: 255px;
+    right: 320px; 
+}
+
+#CapstoneDate{
+    white-space: nowrap;
+    font-weight: bold;
+    font: 45px;
+    top: 355px;
+    right: 588px; 
+}
+
+#CapstoneBody{
+    font-weight: bold;
+    font: 25px;
+    top: 380px;
+    right: 710px; 
+}
+
+.arrow{
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.RightArrow{
+    right:50px;
+    margin-top: 250px;
+}
+
+.LeftArrow{
+    left:50px;
+    margin-top: 250px;
+}
+
+.footer{
+    background-image: url("../img/Footer.png");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
