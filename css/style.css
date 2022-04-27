@@ -20,6 +20,39 @@ body{
     box-sizing: border-box;
 }
 
+.main-search {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+#input-search {
+    position: absolute;
+    left: 0;
+    width: 75%;
+    margin-left: 2vw;
+    font-size: 2em;
+    background: transparent;
+    color: #000;
+    outline: none;
+    border: 0;
+
+}
+
+.main-search-icon {
+    position: absolute;
+    right: 0px;
+    margin-right: 2vw;
+}
+
+
 
 nav {
     display: flex;
