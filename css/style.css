@@ -1,0 +1,531 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: #F8F8F8;
+
+    /* Center Body */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw; */
+}
+
+
+.header {
+    background-image: url("../img/Earth-video-gif.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.nav-links li{
+    display: inline-block;
+    margin-left: 3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+
+.nav-links li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 0;
+    position: relative;
+}
+
+
+.nav-links li a:hover{
+    color: #0B3D91;
+}
+
+
+.nav-links li .active{
+    color: #0B3D91;
+}
+
+
+.nav-links li a::after{
+    content: '';
+    background: #0B3D91;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+/* .search-icon{
+    width: 30px;
+    cursor: pointer;
+    padding-right: 1vw;
+} */
+
+
+.Profile-icon {
+    width: 35px;
+    cursor: pointer;
+    padding-right: 1vw;
+}
+
+
+
+/* Nasa TV */
+
+.NasaTv-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    justify-content: center;
+}
+
+.NasaTv-pic {
+    width: 40vw;
+    height: auto;;
+}
+
+.NasaTv-item2 {
+    margin-left: 5vw;
+}
+
+.line-title {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    border-bottom: 5px #FFFFFF;
+}
+
+.calendar-icon {
+    margin-right: 1vw;
+}
+
+.NasaTv-Heading {
+    font-weight: 900;
+    font-size: 3em;
+    letter-spacing: 0.25vw;
+    text-transform: uppercase;
+}
+
+.NasaTv-SubHeading {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 0.15vw;
+    text-transform: uppercase;
+}
+
+.NasaTv-Scheduletitle{
+    font-weight: 400;
+}
+
+.upcoming-container {
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+}
+
+.span-upcoming {
+    font-weight: 400;
+    margin-left: 2vw;
+}
+
+/* NasaTv RWD */
+@media only screen and (max-width: 1100px) {
+    .upcoming-container {
+        grid-template-columns: repeat(1, auto);
+        /* text-align: center; */
+    }
+}
+
+/* NasaTv RWD */
+@media only screen and (max-width: 900px) {
+    .NasaTv-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+.upcoming-day {
+    font-weight: 900;
+    letter-spacing: 0.15vw;
+    text-transform: uppercase;
+}
+
+.time{
+    font-weight: 700;
+}
+
+.ChannelName{
+    font-weight: 400;
+}
+
+.NasaTv-arrow {
+    margin-top: 2vh;
+    margin-left: 5px;
+    margin-right: 1vw;
+}
+
+.nasaTv-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+
+/* Buttons */
+button {
+    width: 200px;
+    padding: 25px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 0;
+    font-weight: 400;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 7px 7px 15px #E1DDDF;
+    position: relative;
+    overflow: hidden;
+}
+
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    background-position: left bottom;
+    transition: all .3s ease-out;
+  }
+
+
+
+  /* Back to top */
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    left: 80%;
+    display: none;
+    padding: 75px;
+  }
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background: linear-gradient(to bottom, #212121, #000000);
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    /* background-image: url("img/Footer-img.png"); */
+}
+
+.footer-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.media-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 2% 10% 5% 10%;
+}
+
+.public-media-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 0 20% 0 20%;
+}
+
+.public-media-item {
+    cursor: pointer;
+    width: 75%;
+    height: 100%;
+}
+
+.social-info-title {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.social-media-item {
+    width: 50px;
+    height: 50px;
+}
+
+.social-info-desc {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.contact-title {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.fa-envelope {
+    margin-right: 2%;
+}
+
+.contact-email {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+#input-email {
+    width: 50%;
+    height: 15%;
+    font-size: 18px;
+    background: #ffffff;
+    color: #000;
+    outline: none;
+    border: 0;
+}
+
+.footer-bg {
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+/* NasaUpTo */
+
+.NasaUpTo {
+    background: #000000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.NasaUpToTitle {
+    margin-top: 3%;
+    color: #ffffff;
+    font-weight: Bold;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    opacity: 1;
+    text-align: center;
+}
+
+.NasaUpToText-sub {
+    font-weight: 400;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 1;
+}
+
+.NasaUpToSmallText {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.3em;
+    opacity: 1;
+}
+
+.NasaUpTo-item2{
+    padding: 10vh;
+    color: #ffffff;
+    text-align: left;
+}
+
+.NasaUpTo-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NasaUpTo RWD */
+@media only screen and (max-width: 900px) {
+    .NasaUpTo-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+
+/* Floating animation below*/
+.NasaUpTo-item img{
+    width: 25vw;
+    height: auto;
+    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+
+@keyframes fadeInFromTop{
+    from{
+        opacity: 0;
+        transform: translate(-20px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes floating{
+    0%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    25%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    50%{
+        transform: translate(10%, 5%) rotate(360deg);
+    }
+    75%{
+        transform: translate(0%, 15%) rotate(360deg);
+    }
+    100%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+}
+
+
+
+/* STEM section */
+.stem-quiz {
+    position: relative;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.stem-learning {
+    margin-left: 10%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.moon {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+
+.stem-kid {
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 0;
+}
+
+.quizbox-container {
+    padding: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(45px);
+    border-radius: 25px;
+}
+
+.quiztitle{
+    max-width: 55vw;
+    font-weight: 800;
+    font-size: 3em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.quiztext{
+    max-width: 55vw;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 0.07em;
+}
+
+/* STEM Quiz RWD */
+@media only screen and (max-width: 1200px) {
+    .quizbox-container {
+        text-align: center;
+    }
+
+    .quiztitle{
+        text-align: center;
+    }
+
+    .stem-kid {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Data & Stats */
+
+.DataStats-sec {
+    margin-bottom: 5vh;
+}
+
+.StatsTitle{
+    position: relative;
+    font-weight: 800;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.datastats-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+}
+
+.stats-item-img {
+    align-items: center;
+}
+
+.stats-item-title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 6em;
+}
+
+.stats-desc {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+}
