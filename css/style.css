@@ -350,7 +350,6 @@ footer {
     background: #ffffff;
     color: #000;
     outline: none;
-    border: 0;
 }
 
 .footer-line{
@@ -483,7 +482,7 @@ footer {
 
 .stem-quiz {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 25%;
     margin-bottom: 10vh;
 }
 
