@@ -240,7 +240,7 @@ button {
     background: transparent;
     color: #ffffff;
     cursor: pointer;
-    /* box-shadow: 5px 5px 5px #E1DDDF; */
+    box-shadow: 5px 5px 5px #E1DDDF;
 }
 
 
