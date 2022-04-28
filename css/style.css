@@ -413,25 +413,25 @@ footer {
     color: #ffffff;
     font-weight: 200;
     font-size: 2em;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
-.NasaUpTo-item2{
-    position: absolute;
-    margin-top: 10%;
-    color: #ffffff;
-    text-align: left;
-    right: 0;
-}
 
 .NasaUpTo-container {
     position: relative;
-    /* display: flex; */
-    /* grid-template-columns: repeat(2, auto); */
-    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: stretch;
+    justify-content: left;
     margin-bottom: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.NasaUpTo-item2{
+    margin-top: 10%;
+    color: #ffffff;
+    text-align: left;
 }
 
 /* REVIEW THIS */
@@ -449,17 +449,11 @@ footer {
 
 /* Floating animation below*/
 .astronaut {
-    position: aboslute;
-    z-index: 1;
-    float: left;
-    width: 50%;
+    width: 75%;
     height: auto;
     animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
 }
 
-.astronaut {
-    /* display: none; */
-}
 
 @keyframes fadeInFromTop{
     from{
