@@ -403,32 +403,40 @@ footer {
 }
 
 .NasaUpToText-sub {
-    font-weight: 400;
-    font-size: 2em;
+    font-weight: 800;
+    font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    opacity: 1;
+    letter-spacing: 0.2em;
 }
 
 .NasaUpToSmallText {
     color: #ffffff;
-    font-weight: 300;
-    font-size: 1.3em;
-    opacity: 1;
+    font-weight: 200;
+    font-size: 2em;
+    margin-bottom: 10%;
 }
 
 .NasaUpTo-item2{
-    padding: 10vh;
+    position: absolute;
+    margin-top: 10%;
     color: #ffffff;
     text-align: left;
+    right: 0;
 }
 
 .NasaUpTo-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    position: relative;
+    /* display: flex; */
+    /* grid-template-columns: repeat(2, auto); */
+    /* justify-content: center; */
     margin-bottom: 5%;
-    align-items: center;
-    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* REVIEW THIS */
+.nasaupto-border {
+    border: 1px solid rgba(255, 255, 255, .5);
 }
 
 /* NasaUpTo RWD */
@@ -440,10 +448,17 @@ footer {
 
 
 /* Floating animation below*/
-.NasaUpTo-item img{
-    width: 25vw;
+.astronaut {
+    position: aboslute;
+    z-index: 1;
+    float: left;
+    width: 50%;
     height: auto;
     animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+}
+
+.astronaut {
+    /* display: none; */
 }
 
 @keyframes fadeInFromTop{

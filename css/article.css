@@ -3,11 +3,12 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: black;
-    color: #f8f8f8;
+    color: #ffffff;
 }
+
 /* Jumbotron  */
 .jumbotron {
-    background-image: url("../images/astronaut.png");
+    background-image: url("../img/astronaut.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 25px);
