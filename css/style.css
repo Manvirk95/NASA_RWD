@@ -6,49 +6,61 @@ body{
     color: #FFFFFF;
 }
 
-
 .header {
+    padding-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main-screen {
+    position: relative;
+    margin-bottom: 60%;
+}
+
+.earth-gif {
     background-image: url("../img/Earth-video-gif.gif");
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
-    position: relative;
+    position: absolute;
     padding-left: 10%;
     padding-right: 10%;
     box-sizing: border-box;
 }
 
+
 .main-search {
-    position: relative;
+    position: absolute;
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
     align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 10%;
     margin-left: 20%;
     margin-right: 20%;
-    height: 6vh;
+    height: 75px;
     border-radius: 10px;
     background-color: #FFFFFF;
 }
 
 #input-search {
-    position: absolute;
-    left: 0;
     width: 75%;
-    margin-left: 2vw;
+    margin-left: 2%;
     font-size: 2em;
     background: transparent;
     color: #000;
     outline: none;
     border: 0;
-
 }
 
 .main-search-icon {
-    position: absolute;
-    right: 0px;
-    margin-right: 2vw;
+    position: relative;
+    margin-left: 75%;
 }
 
 
@@ -131,8 +143,8 @@ nav {
 .NasaTv-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin-top: 2vh;
-    margin-bottom: 5vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
     justify-content: center;
 }
 
@@ -270,37 +282,34 @@ button:hover {
 /* Footer */
 footer {
     position: relative;
-    margin-top: 25vh;
-    width: 100vw;
-    /* background: linear-gradient(to bottom, #212121, #000000); */
-    border-top-left-radius: 125px;
-    border-top-right-radius: 125px;
-    /* background-image: url("img/Footer-img.png"); */
+    margin-top: 10%;
+    width: 100%;
 }
 
 .footer-bg {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 50vh;
+    height: auto;
 }
 
 .footer-title {
     text-align: center;
     font-weight: 700;
     font-size: 3.5em;
-}
-
-.media-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    margin: 2% 10% 5% 10%;
+    padding-top: 5%;
 }
 
 .public-media-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    margin: 0 20% 0 20%;
+    margin: 0 15% 0 15%;
+}
+
+.media-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 5% 10% 5% 10%;
 }
 
 .public-media-item {
@@ -571,7 +580,7 @@ footer {
     position: absolute;
     z-index: -1;
     width: 100vw;
-    height: 75vh;
+    height: auto;
 }
 
 .StatsTitle{
