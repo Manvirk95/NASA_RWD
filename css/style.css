@@ -638,7 +638,7 @@ footer {
 }
 
 
-.mission-btn {
+.mission-btn, .resources-btn {
     color: white;
     text-decoration: none;
     background-color: none;
@@ -650,7 +650,7 @@ footer {
     white-space: nowrap;
     }
 
-.mission-btn:hover {
+.mission-btn:hover, .resources-btn:hover {
     color: black;
     text-decoration: none;
     background-color: white;
@@ -662,7 +662,7 @@ footer {
     white-space: nowrap;
 }
 
-.mission-btnLeftBottom{
+.mission-btnLeftBottom, .resources-btnLeftBottom{
     position: relative;
     top: 500px;
     right: 1160px;
