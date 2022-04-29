@@ -143,7 +143,7 @@ nav {
 .NasaTv-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
     justify-content: center;
 }
@@ -425,7 +425,6 @@ footer {
     margin-bottom: 5%;
 }
 
-
 .NasaUpTo-container {
     position: relative;
     display: grid;
@@ -442,6 +441,7 @@ footer {
     color: #ffffff;
     text-align: left;
 }
+
 
 /* REVIEW THIS */
 .nasaupto-border {
@@ -623,7 +623,6 @@ footer {
 
 
 
-
 /* CODE FOR MISSION - VALIDATION REQUIRED */
 
 
@@ -638,69 +637,8 @@ footer {
     box-sizing: border-box;
 }
 
-.logo {
-    width: 150px;
-    cursor: pointer;
-}
 
-.nav-links li{
-    display: inline-block;
-    margin-left: 60px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
-}
-
-.nav-links li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 5px 0;
-    position: relative;
-}
-
-.nav-links li a:hover{
-    color: #0B3D91;
-}
-
-.nav-links li .active{
-    color: #0B3D91;
-}
-
-.nav-links li a::after{
-    content: '';
-    background: #0B3D91;
-    width: 0;
-    height: 5px;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.5s;
-}
-
-.nav-links li a:hover::after {
-    width: 100%;
-}
-
-.search-icon{
-    width: 30px;
-    cursor: pointer;
-    padding-right: 1vw;
-} 
-
-.Profile-icon {
-    width: 35px;
-    cursor: pointer;
-    padding-right: 1vw;
-}
-
-.nasaTv-icon {
-    width: 40px;
-    cursor: pointer;
-}
-
-.btn {
+.mission-btn {
     color: white;
     text-decoration: none;
     background-color: none;
@@ -712,7 +650,7 @@ footer {
     white-space: nowrap;
     }
 
-.btn:hover {
+.mission-btn:hover {
     color: black;
     text-decoration: none;
     background-color: white;
@@ -724,33 +662,31 @@ footer {
     white-space: nowrap;
 }
 
-.btnLeftBottom{
+.mission-btnLeftBottom{
     position: relative;
     top: 500px;
-    right: 1160px; 
+    right: 1160px;
 
 }
 
-.btnLeftBottom1{
+.mission-btnLeftBottom1{
     position: relative;
     top: 540px;
-    right: 1160px; 
+    right: 1160px;
 
 }
 
-.btnLeftBottom2{
+.mission-btnLeftBottom2{
     position: relative;
     top: 20px;
-    left: 550px; 
+    left: 550px;
 
 }
+
+
 .MissionSlide{
     width: 100%;
     height: 75%;
-}
-
-.MissionFont{
-    color: white;
 }
 
 .LaunchesImage{
@@ -792,7 +728,6 @@ footer {
     background-repeat: no-repeat;
     height: 680px;
     width: 500px;
-   
     margin-bottom:20px;
     margin-left: 150px;
     text-align: left;
@@ -802,7 +737,7 @@ footer {
     position: relative;
     font-size: 55px;
     font-weight: bold;
-    color: white;    
+    color: white;
     left: 550px;
 }
 
@@ -877,7 +812,7 @@ footer {
     font-weight: bold;
     font: 96px;
     top: 255px;
-    right: 320px; 
+    right: 320px;
 }
 
 #CapstoneDate{
@@ -885,14 +820,14 @@ footer {
     font-weight: bold;
     font: 45px;
     top: 355px;
-    right: 588px; 
+    right: 588px;
 }
 
 #CapstoneBody{
     font-weight: bold;
     font: 25px;
     top: 380px;
-    right: 710px; 
+    right: 710px;
 }
 
 .arrow{
@@ -909,11 +844,4 @@ footer {
 .LeftArrow{
     left:50px;
     margin-top: 250px;
-}
-
-.footer{
-    background-image: url("../img/Footer.png");
-    background-size: 100% 100%;
-    height: 100vh;
-    width: 100%;
 }
