@@ -22,9 +22,9 @@
             <img src="img/NASA LOGO.png" class="logo" href="#">
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">Missions</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Scholastics</a></li>
+                <li><a href="mission.html">Missions</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="resources.html">Scholastics</a></li>
             </ul>
             <div class="header-icons">
                 <!-- <img src="img/Searchicon.png" class="search-icon" href="#"> -->
@@ -32,6 +32,15 @@
                 <img src="img/TVicon.png" class="nasaTv-icon" href="#">
             </div>
         </nav>
+    </div>
+
+
+    <div class="main-screen">
+        <div class="earth-gif"></div>
+        <div class="main-search">
+            <input type="text" id="input-search" name="search" placeholder="Explore what planets like to read" required>
+            <img src="img/main-search.png" class="main-search-icon" href="#">
+        </div>
     </div>
 
 
@@ -65,9 +74,9 @@
     <!-- Nasa Up To -->
     <!-- <img class="NasaUptoRectangle" src="img/Rectangle-NasaUpTo.png"> -->
     <p class="NasaUpToTitle">WHAT'S NASA UP TO?</p>
-    <div class="NasaUpTo-container">
+    <div class="NasaUpTo-container nasaupto-border">
         <div class="NasaUpTo-item">
-            <img src="img/Astronaut-flying.png">
+            <img src="img/Astronaut-flying.png" class="astronaut">
         </div>
         <div class="NasaUpTo-item NasaUpTo-item2">
             <div class="NasaUpToText-sub">HUMANS IN SPACE</div>
@@ -90,8 +99,10 @@
         </div>
     </div>
 
+
 <!-- Data & Stats -->
     <div class="DataStats-sec">
+        <img src="img/datastats-bg.png" class="datastats-bg">
         <p class="StatsTitle">Data & Stats</p>
         <div class="datastats-container">
             <div class="datastats-item">
@@ -113,15 +124,9 @@
     </div>
 
 
-    <!-- Back to top -->
-    <div class="fixed-bottom back-top" id="back2top">
-        <a href="#"><img src="img/BackToTop.png"></a>
-    </div>
-
-
-
     <!-- Footer below-->
     <footer>
+        <img src="img/Footer-bg.png" class="footer-bg">
         <p class="footer-title">STAY UP TO DATE, DOWNLOAD OUR APP.</p>
         <div class="public-media-container">
             <img src="img/AppStore.png" class="public-media-item" href="#">
@@ -139,7 +144,7 @@
                     <img src="img/Twitter-icon.png" class="social-media-item" href="#">
                 </div>
             </div>
-            <div class="container">
+            <div class="container contact-container">
                 <p class="contact-title">CONTACT</p>
                 <p class="contact-email"><i class="far fa-envelope"></i>Hello@nasa.com</p>
                 <input type="text" id="input-email" name="email" placeholder="Email Address" required><br><br>
@@ -147,7 +152,22 @@
             </div>
         </div>
         <!-- <img src="img/Footer-img.png" class="footer-bg"> -->
+        <div class="footer-line"></div>
+        <div class="footer-container">
+            <img src="img/footer-NASALOGO.png" class="footer-nasa-logo">
+            <p class="NASA-name">National Aeronautics and Space Administration<br>NASA Official: Brian Dunbar</p>
+            <p class="no-fear-act footer-pointer" href="#">No Fear Act</p>
+            <p class="foia footer-pointer" href="#">FOIA</p>
+            <p class="agency-financial-reports footer-pointer" href="#">Agency Financial Reports</p>
+            <p class="privacy" href="#">Privacy</p>
+        </div>
     </footer>
+
+
+    <!-- Back to top -->
+    <div class="fixed-bottom back-top" id="back2top">
+        <a href="#"><img src="img/BackToTop.png"></a>
+    </div>
 </body>
 
 
