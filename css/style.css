@@ -623,7 +623,7 @@ footer {
 
 
 
-/* CODE FOR MISSION - VALIDATION REQUIRED */
+/* CODE FOR MISSION */
 
 
 .mission-header {
@@ -690,36 +690,36 @@ footer {
 }
 
 .LaunchesImage{
-        background-image: url("../img/CapstoneImage.png");
-        background-size:100% 100%; ;
-        height: 600px;
-        width: 100%;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        margin-bottom:20px;
+    background-image: url("../img/CapstoneImage.png");
+    background-size:100% 100%; ;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom:20px;
 }
 
 .LaunchesImage2{
-        background-image: url("../img/X57.png");
-        background-size:100% 100%; ;
-        height: 600px;
-        width: 100%;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        margin-bottom:20px;
+    background-image: url("../img/X57.png");
+    background-size:100% 100%; ;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom:20px;
 }
 
 .DiscoveryImage{
-        background-image: url("../img/Discoveries.png");
-        background-size:100% 100% ;
-        height: 600px;
-        width: 100%;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        margin-bottom:20px;
+    background-image: url("../img/Discoveries.png");
+    background-size:100% 100% ;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom:20px;
 }
 
 .GalleryImage{
@@ -844,4 +844,186 @@ footer {
 .LeftArrow{
     left:50px;
     margin-top: 250px;
+}
+
+
+
+/* CODE FOR MISSION */
+
+.article-body {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.article-header {
+    background-image: url("../img/article-page-astronaut-bg.png");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.articles-title {
+    /* position */
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+
+    /* appearance */
+    font-size: 10em;
+    font-weight: 800;
+    letter-spacing: 30px;
+}
+
+.articles-nav {
+    /* position */
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+
+    /* appearance */
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.articles-sub-menu-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.button-container button {
+    box-shadow: none;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.button-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 10px;
+    left: 5%;
+    justify-content: left;
+}
+
+.dropdown-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 50px;
+    right: 5%;
+    justify-content: right;
+}
+
+.dropdown button {
+    background: transparent;
+    letter-spacing: 2px;
+
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.dropdown button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all .3s ease-out;
+}
+
+.articles-section {
+    position: relative;
+    margin-top: 50px;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.article-items {
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.card-items {
+    color: #000;
+    background-color: #fff;
+}
+
+.card-items a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-text {
+    padding: 5%;
+}
+
+.article-title {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.gallery-section {
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: .25em;
+
+    text-align: center;
+    margin-top: 3%;
+}
+
+.carousel-container {
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.carousel-container button {
+    box-shadow: none;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.carousel-item-text button {
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.carousel-item {
+    display: flex;
+    padding-top: 5%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+}
+
+.carousel-img{
+    width: 30%;
+    height: auto;
+}
+
+.carousel-item-text .title {
+    font-weight: 700;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.carousel-item-text .desc {
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
 }
