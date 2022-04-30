@@ -99,3 +99,36 @@ margin-bottom:20px;
 h4 {
     color:white;
 }
+
+.btn {
+  color: white;
+  text-decoration: none;
+  background-color: none;
+  border: 3px solid white;
+  padding: 10px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 25px;
+  white-space: nowrap;
+  }
+.btn:hover {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border: 3px solid white;
+  padding: 10px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 25px;
+  white-space: nowrap;
+}
+.btnLeftBottom{
+  position: absolute;
+  top: 500px;
+  right: 1160px;
+}
+.btnLeftBottom1{
+  position: absolute;
+  top: 540px;
+  right: 1160px;
+}
