@@ -90,7 +90,22 @@ nav {
     padding-right: 1vw;
 }
 
-
+/* Scholastics Heading & Breadcrumbs */
+.scholastics-title { 
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: 30px;
+}
+.scholastics-nav {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    font-size: 3em;
+    font-weight: 200;
+}
 
 
 /* Buttons */
@@ -134,7 +149,76 @@ button:hover {
     background-position: left bottom;
     transition: all .3s ease-out;
   }
+/* STEM section */
 
+.stem-quiz {
+    position: relative;
+    margin-top: 25%;
+    margin-bottom: 10vh;
+}
+
+.stem-learning {
+    margin-left: 10%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.moon {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    /* transform: translate(15%); */
+}
+
+.stem-kid {
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 0;
+}
+
+.quizbox-container {
+    padding: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(45px);
+    border-radius: 25px;
+}
+
+.quiztitle{
+    max-width: 55vw;
+    font-weight: 800;
+    font-size: 3em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.quiztext{
+    max-width: 55vw;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 0.07em;
+}
+
+/* STEM Quiz RWD */
+@media only screen and (max-width: 1200px) {
+    .quizbox-container {
+        text-align: center;
+    }
+
+    .quiztitle{
+        text-align: center;
+    }
+
+    .stem-kid {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+    }
+}
 
 /* Footer */
 footer {
