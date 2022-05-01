@@ -108,7 +108,7 @@ nav {
 }
 
 
-/* Buttons */
+/* Buttons */ /* Misssing btn-take-quiz to fix button issue on button quiz*/
 button {
     width: 200px;
     padding: 15px 0;
@@ -321,25 +321,8 @@ footer {
     margin-left: 7%;
     margin-right: 7%;
 }
-
-/* stem */
-.stemtitle {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
-    letter-spacing: 0.4em;
-    text-align: center;
-
-
-}
 /* artemis */
 .artemis {
-    background-size: 100%;
     height: 600px;
     width: 100%;
     display: flex;
@@ -348,10 +331,21 @@ footer {
     margin-bottom:20px;
     position: relative;
 }
-
 .artemisimg {
-    background-image: url(/img/artemis.png);
-    width: 100%;
+    position: relative;
+}
+.artemistext {
+    position: absolute;
+    margin-left: 5%;
+    padding: 10%;
+}
+.artemis-title {
+    width: 470px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
 }
 /* button */
 .btn {
@@ -387,6 +381,10 @@ footer {
     right: 1160px;
 }
 /* Resources*/
+.resources {
+    display: flex;
+    height: 790px;
+}
 .cardcontainer {
     display: flex;
     width: 60%;
@@ -402,6 +400,22 @@ footer {
     animation-delay: .5s;
 
 }
+.stemtitle {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.4em;
+    text-align: center;
+}
+/* Resources RWD */
+
+ 
+/*Discovery card*/
 
 .DiscoveryImage{
     background-image: url("../img/Discoveries.png");
