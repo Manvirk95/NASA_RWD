@@ -573,6 +573,11 @@ footer {
     font-size: 4em;
 }
 
+.breadcrumb-home {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
 /*
 .article-title {

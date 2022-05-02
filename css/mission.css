@@ -630,3 +630,9 @@ footer {
     font-size: 25px;
     letter-spacing: 3px;
 }
+
+.breadcrumb-home {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
