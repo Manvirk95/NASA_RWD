@@ -431,6 +431,17 @@ footer {
     box-sizing: border-box;
 }
 
+.missions-nav {
+    /* position */
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+
+    /* appearance */
+    font-weight: 200;
+    font-size: 2em;
+}
+
 .mission-btn, .resources-btn {
     color: white;
     text-decoration: none;
@@ -475,85 +486,6 @@ footer {
 
 }
 
-.MissionTitle{
-    font-weight: 800;
-    font: 3em;
-    letter-spacing: 12px;
-    text-align: center;
-    padding-top: 7%;
-}
-
-.MissionSlide{
-    width: 100%;
-    height: 75%;
-}
-
-.LaunchesImage{
-    background-image: url("../img/CapstoneImage.png");
-    background-size:100% 100%; ;
-    height: 600px;
-    width: 100vw;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-bottom:20px;
-    padding: 0 10% 0 10%;
-}
-
-/* .LaunchesImage2{
-    background-image: url("../img/X57.png");
-    background-size: 100% 100%; ;
-    height: 600px;
-    width: 100vw;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-bottom: 20px;
-} */
-
-.DiscoveryImage{
-    background-image: url("../img/Discoveries.png");
-    background-size: 100% 100% ;
-    height: 600px;
-    width: 100vw;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-bottom: 20px;
-}
-
-.GalleryImage{
-    background-image: url("../img/MissionGallery.png");
-    background-size:100% 100% ;
-    background-repeat: no-repeat;
-    width: 40vw;
-    height: auto;
-    margin-bottom:20px;
-    margin-left: 150px;
-    text-align: left;
-}
-
-.GalleryHeading{
-    position: relative;
-    font-size: 55px;
-    font-weight: bold;
-    color: white;
-    left: 550px;
-}
-
-.GallerySubheading{
-    position: relative;
-    font-size: 35px;
-    font-weight: normal;
-    left: 550px;
-}
-
-.Galleries{
-    border: 1px solid white;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .MissionLargeFont{
     font-size: 50px;
     font-weight: bold;
@@ -566,63 +498,28 @@ footer {
     color: white;
 }
 
+
 .MissionHeaderFont{
     position: absolute;
     bottom: 7%;
     left: 10%;
 }
 
+.MissionTitle{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 800;
+    font: 3em;
+    letter-spacing: 12px;
+}
 
-.MissionPlanetText{
+.MissionsBox {
     position: relative;
-    top: 350px;
-    right: 590px;
-    white-space: nowrap;
-    font-size: 25px;
-    letter-spacing: 3px;
-}
 
-#DiscoveryTitle{
-    padding-top: 6%;
-}
+    padding: 5%;
+    height: 80vh;
 
-.MissionDiscoveryTextAlign{
-    position: relative;
-    top: 350px;
-    right: 560px;
-    white-space: nowrap;
-    font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 3px;
-}
-
-.MissionLaunchesTextAlign{
-    position: relative;
-    top: 315px;
-    right: 260px;
-}
-
-#CapstoneTitle{
-    white-space: nowrap;
-    font-weight: bold;
-    font: 96px;
-    top: 255px;
-    right: 320px;
-}
-
-#CapstoneDate{
-    white-space: nowrap;
-    font-weight: bold;
-    font: 45px;
-    top: 355px;
-    right: 588px;
-}
-
-#CapstoneBody{
-    font-weight: bold;
-    font: 25px;
-    top: 380px;
-    right: 710px;
+    /* border: 1px solid rgba(255, 255, 255, .5); */
 }
 
 .arrow{
@@ -632,11 +529,106 @@ footer {
 }
 
 .RightArrow{
-    right: 50px;
-    margin-top: 250px;
+    right: 5%;
+    top: 50%;
 }
 
 .LeftArrow{
-    left: 50px;
-    margin-top: 250px;
+    left: 5%;
+    top: 50%;
+}
+
+
+.LaunchesImage{
+    background-image: url("../img/CapstoneImage.png");
+    background-size:100% 100%; ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+
+    /* border: 1px solid rgba(255, 255, 255, .5); */
+}
+
+.mission-desc{
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+}
+
+#CapstoneDate{
+    max-width: 50vw;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#CapstoneBody{
+    max-width: 50vw;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+.DiscoveryImage{
+    background-image: url("../img/Discoveries.png");
+    background-size: 100% 100% ;
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.Gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* .GalleryImage{
+
+} */
+
+.gallery-desc {
+    margin-left: 5%;
+}
+
+.GalleryHeading{
+    position: relative;
+    font-weight: bold;
+    max-width: 25vw;
+    font-size: 2em;
+    color: white;
+}
+
+.GallerySubheading{
+    position: relative;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.Galleries{
+    border: 1px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.MissionPlanetText{
+    position: relative;
+    white-space: nowrap;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+
+.MissionDiscoveryTextAlign{
+    position: relative;
+    top: 350px;
+    right: 560px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
