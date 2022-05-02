@@ -618,19 +618,54 @@ footer {
 
 
 /*Discovery card*/
+.MissionTitle{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 800;
+    font: 3em;
+    letter-spacing: 12px;
+}
+
+.MissionsBox {
+    position: relative;
+
+    padding: 5%;
+    height: 80vh;
+
+    /* border: 1px solid rgba(255, 255, 255, .5); */
+}
+
+.mission-desc{
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+}
+
+.arrow{
+    position: absolute;
+    width: 47px;
+    height: 47px;
+}
+
+.RightArrow{
+    right: 5%;
+    top: 50%;
+}
+
+.LeftArrow{
+    left: 5%;
+    top: 50%;
+}
 
 .DiscoveryImage{
     background-image: url("../img/Discoveries.png");
-    background-size:100%;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 100%;
+    background-size: 100% 100% ;
     display: flex;
     align-items: left;
     justify-content: left;
-    margin-bottom:20px;
-    position: relative;
+    margin-bottom: 20px;
 }
+
 .MissionLargeFont{
 font-size: 50px;
 font-weight: bold;
@@ -646,24 +681,14 @@ position: absolute;
 bottom: 7%;
 left: 10%;
 }
-.MissionTitle{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font: 40px;
-letter-spacing: 0.4em;
-line-height: 60px;
-text-align: center;
-padding-top: 7%;
-}
+
 .MissionPlanetText{
-position: absolute;
-top: 350px;
-right: 590px;
-white-space: nowrap;
-font-size: 25px;
-letter-spacing: 3px;
+    position: relative;
+    white-space: nowrap;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
+
 #DiscoveryTitle{
 padding-top: 6%;
 }
