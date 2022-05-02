@@ -1,5 +1,6 @@
 /* GENERIC HEADER & FOOTER - SHARED BETWEEN ALL CSS FILES*/
 
+/* BODY */
 body{
     margin: 0;
     padding: 0;
@@ -170,7 +171,7 @@ nav ul li a:hover::after {
 
     .nav-links {
         position: fixed;
-        left: -100%;
+        right: -100%;
         top: 70px;
         gap: 0;
         flex-direction: column;
@@ -185,6 +186,7 @@ nav ul li a:hover::after {
 
     nav li{
         display: flex;
+        justify-content: right;
     }
 
     .nav-item {
@@ -192,7 +194,7 @@ nav ul li a:hover::after {
     }
 
     .nav-links.active {
-        left: 0;
+        right: 10%;
     }
 }
 
