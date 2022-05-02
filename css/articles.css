@@ -1,5 +1,6 @@
 /* GENERIC HEADER & FOOTER - SHARED BETWEEN ALL CSS FILES*/
 
+/* BODY */
 body{
     margin: 0;
     padding: 0;
@@ -12,11 +13,11 @@ body{
     padding-right: 10%;
 }
 
-/* Buttons */
+/* BUTTON */
 button {
     position: relative;
     width: 200px;
-    padding: 25px 0;
+    padding: 20px 0;
     text-align: center;
     margin: 20px 10px;
     font-weight: 400;
@@ -25,7 +26,16 @@ button {
     background: transparent;
     color: #ffffff;
     cursor: pointer;
-    box-shadow: 5px 5px 5px #E1DDDF;
+    box-shadow: 5px 5px 10px #E1DDDF;
+}
+
+@media only screen and (max-width: 920px) {
+    button {
+        width: 150px;
+        padding: 15px 0;
+        font-weight: 400;
+        font-size: 1em;
+    }
 }
 
 button:hover span {
@@ -39,9 +49,10 @@ button:hover {
     transition: all .3s ease-out;
 }
 
+/* NAVIGATION */
 nav {
+    text-decoration: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -54,10 +65,12 @@ nav .logo {
 nav li{
     display: inline-block;
     text-transform: uppercase;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 20px;
+    /* margin-left: 30px;
+    margin-right: 30px; */
     font-weight: 500;
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 nav li a{
@@ -68,6 +81,7 @@ nav li a{
 
 nav li a:hover{
     color: #0B3D91;
+    text-decoration: none;
 }
 
 nav li .active{
@@ -79,13 +93,14 @@ nav li a::after{
     background: #0B3D91;
     width: 0;
     height: 5px;
+    border-radius: 4px;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     transition: width 0.5s;
 }
 
-nav li a:hover::after {
+nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -106,14 +121,102 @@ nav li a:hover::after {
     cursor: pointer;
 }
 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav .logo {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    nav li{
+        display: inline-block;
+        text-transform: uppercase;
+        margin: 0 20px;
+        font-weight: 500;
+        font-size: 1em;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    nav .logo {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    nav li{
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+}
+
+
 
 /* BACK TO TOP */
 .back-top {
     position: fixed;
-    bottom: 20px;
+    top: 65%;
     left: 80%;
     display: none;
     padding: 75px;
+}
+
+.back-top-img{
+    width: 100px;
+    height: auto;
+}
+
+@media only screen and (max-width: 920px) {
+    .back-top {
+        left: 75%;
+    }
 }
 
 
@@ -121,8 +224,8 @@ nav li a:hover::after {
 footer {
     background-image: url("../img/Footer-bg.png");
     background-size: 100% 100%;
-    height: 100vh;
     width: 100%;
+    height: auto;
     position: relative;
     box-sizing: border-box;
     padding-top: 100px;
@@ -131,14 +234,14 @@ footer {
 .footer-title {
     text-align: center;
     font-weight: 800;
-    font-size: 3.5em;
+    font-size: 2.5em;
     letter-spacing: .15em;
 }
 
 .public-media-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    margin: 6% 15% 7% 15%;
+    margin: 5% 15% 5% 15%;
 }
 
 .media-container {
@@ -159,45 +262,44 @@ footer {
 }
 
 .social-info-title {
-    font-weight: 500;
-    font-size: 3em;
+    font-weight: 800;
+    font-size: 2em;
 }
 
 .social-info-desc {
-    font-weight: 300;
-    font-size: 2em;
+    font-weight: 200;
+    font-size: 1.5em;
     margin-top: 30px;
 }
 
 .social-media-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .smi-instagram-icon {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .contact-title {
-    font-weight: 500;
-    font-size: 3em;
+    font-weight: 800;
+    font-size: 2em;
 }
 
 .fa-envelope {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .contact-email {
-    font-weight: 500;
-    font-size: 2em;
-    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.5em;
 }
 
 #input-email {
     width: 20vw;
-    height: 60px;
-    font-size: 2em;
+    height: 40px;
+    font-size: 1.5em;
     background: #ffffff;
     color: #000;
     outline: none;
@@ -212,26 +314,97 @@ footer {
 }
 
 .footer-container p {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .footer-container {
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
     margin-top: 1%;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-@media only screen and (max-width: 900px) {
-    .footer-container {
-        grid-template-columns: repeat(1, auto);
+@media only screen and (max-width: 920px) {
+    .footer-title {
+        font-weight: 700;
+        font-size: 1.75em;
+        letter-spacing: .15em;
     }
-}
 
+    .public-media-container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        margin: 5% 10% 5% 10%;
+    }
+
+    .media-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 0;
+        margin: 0 10% 0 10%;
+    }
+
+    .public-media-item {
+        cursor: pointer;
+        width: 75%;
+        height: 100%;
+    }
+
+    .contact-container {
+        justify-content: left;
+    }
+
+    .social-info-title {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+    .social-info-desc {
+        font-weight: 200;
+        font-size: 1.5em;
+        margin-top: 30px;
+        max-width: 50%;
+    }
+
+    .smi-instagram-icon {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .contact-title {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+    .contact-email {
+        font-weight: 200;
+        font-size: 1.5em;
+    }
+
+    #input-email {
+        width: 30vw;
+        height: 40px;
+        font-size: 1.5em;
+    }
+
+    .footer-container p {
+        font-size: 1em;
+    }
+
+    .footer-container {
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: left;
+        align-items: center;
+    }
+
+}
 
 
 
@@ -242,15 +415,15 @@ footer {
 
 
 .article-body {
-    color: #ffffff;
+    color: #FFFFFF;
     background-color: #000000;
 }
 
 .article-header {
     background-image: url("../img/article-page-astronaut-bg.png");
     background-size: 100% 100%;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
@@ -264,9 +437,13 @@ footer {
     left: 10%;
 
     /* appearance */
-    font-size: 8em;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 5em;
     letter-spacing: 20px;
+}
+
+.read-article-link {
+    margin-left: 70%;
 }
 
 .articles-nav {
@@ -276,8 +453,8 @@ footer {
     left: 10%;
 
     /* appearance */
-    font-size: 3em;
     font-weight: 200;
+    font-size: 2em;
 }
 
 .articles-sub-menu-container {
@@ -361,6 +538,42 @@ footer {
     padding: 3%;
 }
 
+
+/* CAPSTONE */
+.capstone-sec-title {
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.capstone-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+}
+
+.capstone-img {
+    width: 20vw;
+    height: auto;
+}
+
+.capstone-item2 {
+    margin-left: 3vw;
+}
+
+.capstone-title {
+    font-weight: 900;
+    font-size: 4em;
+}
+
+
+/*
 .article-title {
     font-weight: 800;
     font-size: 1.5em;
@@ -417,4 +630,4 @@ footer {
     font-weight: 300;
     font-size: 2em;
     text-transform: uppercase;
-}
+} */

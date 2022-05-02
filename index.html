@@ -14,22 +14,25 @@
 </head>
 <body class="homepage-body">
 
-
-
     <!-- Header Below -->
     <div class="header homepage-header">
         <nav>
-            <img src="img/NASA LOGO.png" class="logo" href="index.html">
+            <a href="index.html"><img src="img/NASA LOGO.png" class="logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="mission.html">Missions</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="resources.html">Scholastics</a></li>
+                <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+                <li class="nav-item"><a href="mission.html">Missions</a></li>
+                <li class="nav-item"><a href="articles.html">Articles</a></li>
+                <li class="nav-item"><a href="scholastics.html">Scholastics</a></li>
             </ul>
             <div class="header-icons">
                 <img src="img/black-filler-icon.png" class="search-icon" href="#">
                 <img src="img/Profileicon.png" class="profile-icon" href="#">
                 <img src="img/TVicon.png" class="nasa-tv-icon" href="#">
+            </div>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
         <div class="main-search">
@@ -38,6 +41,8 @@
         </div>
         <a href="#anchor-nasatv"><img src="img/See-more.png" class="see-more"></a>
     </div>
+
+
 
 <!-- NASA TV -->
     <a id="anchor-nasatv"></a>
@@ -63,19 +68,17 @@
 <!-- NASA UP TO -->
     <p class="NasaUpToTitle">WHAT'S NASA UP TO?</p>
     <div class="nasatv">
-        <div class="nasatv-border"></div>
         <div class="NasaUpTo-container">
             <div class="NasaUpTo-item">
                 <img src="img/Astronaut-flying.png" class="astronaut">
             </div>
-            <div class="NasaUpTo-item">
+            <div class="NasaUpTo-item NasaUpTo-item2">
                 <div class="NasaUpToText-sub">HUMANS IN SPACE</div>
                 <p class="NasaUpToSmallText">NASA Updates Coverage For<br>Axiom Mission 1 Departure From<br>Space Station</p>
                 <button id="btn-NasaUpTo">READ MORE</button>
             </div>
         </div>
     </div>
-
 
 
 
@@ -100,12 +103,12 @@
             <div class="datastats-item">
                 <img class="datastats-item-img" src="img/Data-img1.png">
                 <p class="datastats-item-title">200+</p>
-                <p class="datastats-desc">Successful Human<br>Space Launches</p>
+                <p class="datastats-desc">Successful<br>Human Space Launches</p>
             </div>
             <div class="datastats-item">
                 <img class="datastats-item-img" src="img/Data-img2.png">
                 <p class="datastats-item-title">133</p>
-                <p class="datastats-desc">Missions To<br>Space</p>
+                <p class="datastats-desc">Missions<br>To Space</p>
             </div>
             <div class="datastats-item">
                 <img class="datastats-item-img" src="img/Data-img3.png">
@@ -126,9 +129,9 @@
             <img src="img/ApplePodcast.png" class="public-media-item" href="#">
         </div>
         <div class="media-container">
-            <div class="container">
+            <div class="container info-container">
                 <p class="social-info-title">INFORMATION</p>
-                <p class="social-info-desc">FOR UPDATES FOLLOW US ON SOCIAL MEDIA.</p>
+                <p class="social-info-desc">For Updates Follow Us On Social Media.</p>
                 <div class="social-icon-container">
                     <img src="img/FB-icon.png" class="social-media-icon" href="#">
                     <img src="img/Instagram-icon.png" class="social-media-icon smi-instagram-icon" href="#">
@@ -144,10 +147,8 @@
         </div>
         <div class="footer-line"></div>
         <div class="footer-container">
-            <div class="footer-left">
-                <img src="img/footer-NASALOGO.png" class="footer-nasa-logo">
-                <p class="NASA-name">National Aeronautics and Space Administration<br>NASA Official: Brian Dunbar</p>
-            </div>
+            <img src="img/footer-NASALOGO.png" class="footer-nasa-logo">
+            <p class="NASA-name">National Aeronautics and Space Administration<br>NASA Official: Brian Dunbar</p>
             <div class="filler"></div>
             <p class="no-fear-act footer-pointer" href="#">No Fear Act</p>
             <p class="foia footer-pointer" href="#">FOIA</p>
@@ -159,7 +160,7 @@
 
     <!-- BACK TO TOP -->
     <div class="back-top" id="back2top">
-        <a href="#"><img src="img/BackToTop.png"></a>
+        <a href="#"><img src="img/BackToTop.png" class="back-top-img"></a>
     </div>
 
 </body>

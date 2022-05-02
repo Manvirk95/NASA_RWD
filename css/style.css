@@ -1,3 +1,4 @@
+/* BODY */
 body{
     margin: 0;
     padding: 0;
@@ -6,6 +7,8 @@ body{
     color: #FFFFFF;
 }
 
+
+/* HEADER */
 .header {
     padding-top: 25px;
     padding-left: 10%;
@@ -73,8 +76,7 @@ body{
     margin-left: 75%;
 }
 
-
-
+/* NAVIGATION */
 nav {
     display: flex;
     align-items: center;
