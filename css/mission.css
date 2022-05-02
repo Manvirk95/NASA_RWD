@@ -423,14 +423,13 @@ footer {
 .mission-header {
     background-image: url("../img/Walle.png");
     background-size: 100% 100%;
-    width: 100%;
     height: 100vh;
+    width: 100%;
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
     box-sizing: border-box;
 }
-
 
 .mission-btn, .resources-btn {
     color: white;
@@ -476,6 +475,13 @@ footer {
 
 }
 
+.MissionTitle{
+    font-weight: 800;
+    font: 3em;
+    letter-spacing: 12px;
+    text-align: center;
+    padding-top: 7%;
+}
 
 .MissionSlide{
     width: 100%;
@@ -491,9 +497,10 @@ footer {
     align-items: left;
     justify-content: left;
     margin-bottom:20px;
+    padding: 0 10% 0 10%;
 }
 
-.LaunchesImage2{
+/* .LaunchesImage2{
     background-image: url("../img/X57.png");
     background-size: 100% 100%; ;
     height: 600px;
@@ -502,7 +509,7 @@ footer {
     align-items: left;
     justify-content: left;
     margin-bottom: 20px;
-}
+} */
 
 .DiscoveryImage{
     background-image: url("../img/Discoveries.png");
@@ -565,12 +572,6 @@ footer {
     left: 10%;
 }
 
-.MissionTitle{
-    font: 40px;
-    letter-spacing: 12px;
-    text-align: center;
-    padding-top: 7%;
-}
 
 .MissionPlanetText{
     position: relative;
@@ -631,11 +632,11 @@ footer {
 }
 
 .RightArrow{
-    right:50px;
+    right: 50px;
     margin-top: 250px;
 }
 
 .LeftArrow{
-    left:50px;
+    left: 50px;
     margin-top: 250px;
 }
