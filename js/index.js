@@ -24,3 +24,14 @@ function backToTop() {
   // document.documentElement.scrollTop = 0;
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+
+const hamburger = document.querySelector(".hamburger-menu");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("active");
+
+
+})
